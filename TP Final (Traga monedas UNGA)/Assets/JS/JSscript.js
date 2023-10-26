@@ -1,1 +1,4 @@
-var juancaputo = prompt ("juanca se la come");
+var botonini = document.getElementById("iniciar");
+
+
+
