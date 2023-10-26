@@ -1,10 +1,22 @@
-body{ background: blue;
 
+img{
+	width:100%;
+	height: auto;
 }
 .dis{
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
+}
+header{
+	display: none;
+
 }
 #oculto{
 	display: none;
+
+}
+oculto,div{
+	width: 30%;
+	height: auto;
 }
