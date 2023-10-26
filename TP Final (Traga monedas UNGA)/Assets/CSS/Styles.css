@@ -1,7 +1,10 @@
 body{ background: blue;
 
 }
-
+.dis{
+	display: flex;
+	flex-direction: row;
+}
 #oculto{
 	display: none;
 }
