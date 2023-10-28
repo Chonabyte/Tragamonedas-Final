@@ -1,10 +1,20 @@
+//Inicio del juego
+//boton comenzar
 var botonini = document.getElementById("iniciar"); //boton comenzar
 var oculto = document.getElementById("oculto"); // la seccion oculta del minijuego
+var sectionini = document.querySelector("section");
+
+
+//header
 var usuario = document.getElementById("usuario"); //guardamos el div donde se pondria el nombre del usuario
-var headprinci = document.querySelector("header");
 var plata =  document.getElementById("plata"); //guardamos el div donde se pondria la plata del usuario
+var botondinero = document.getElementById("apuesta"); //guardamos el boton de apuesta
+
+
+var headprinci = document.querySelector("header");
+
 var nombre = "";
-var botondinero = document.getElementById("apuesta");
+
 var pozo = 0;
 var palanca = document.getElementById("palanca");
 var slots = document.getElementsByClassName("slot");
@@ -17,6 +27,7 @@ var intervalo2 = "";
 
 botonini.onclick = function(){
 oculto.style.display="block";
+sectionini.style.display="none"
 botonini.style.display="none";
 headprinci.style.display="block"
 nombre = prompt("ingrese su nombre");
@@ -33,7 +44,7 @@ botondinero.innerHTML = ("Agregar saldo");
 palanca.onclick = function(){
 intervalo = setInterval(function(){
 	slots[0].setAttribute("src",imagenes[random()])
-},3000);
+},700);
 }
 
 document.getElementById("frenado").onclick = function(){
