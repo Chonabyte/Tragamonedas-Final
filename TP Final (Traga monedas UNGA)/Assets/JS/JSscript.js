@@ -9,9 +9,7 @@ var sectionini = document.querySelector("section");
 var usuario = document.getElementById("usuario"); //guardamos el div donde se pondria el nombre del usuario
 var plata =  document.getElementById("plata"); //guardamos el div donde se pondria la plata del usuario
 var botondinero = document.getElementById("apuesta"); //guardamos el boton de apuesta
-
-
-var headprinci = document.querySelector("header");
+var headprinci = document.querySelector("header"); //guardamos el header
 
 var nombre = "";
 
@@ -29,7 +27,7 @@ botonini.onclick = function(){
 oculto.style.display="block";
 sectionini.style.display="none"
 botonini.style.display="none";
-headprinci.style.display="block"
+headprinci.style.display="flex"
 nombre = prompt("ingrese su nombre");
 usuario.innerHTML = (nombre.toUpperCase());
 }

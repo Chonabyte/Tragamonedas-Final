@@ -3,15 +3,17 @@ img{
 	width:100%;
 	height: auto;
 }
-.dis{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	display: none;
-}
+
 header{
 	display: none;
+	justify-content: space-between;
 
+}
+
+header div{
+	background: black;
+	color: lightyellow;
+	border-radius: 0.2em;
 }
 #oculto{
 	display: none;
@@ -31,5 +33,13 @@ oculto,div{
 }
 
 #iniciar{
-	
+	padding: 0.5em;
+	font-weight: bold;
+	color: lightyellow;
+	background: black;
+	border-radius: 0.2em;
+}
+
+#plata{
+	display:none;
 }
