@@ -13,8 +13,8 @@ var headprinci = document.querySelector("header"); //guardamos el header
 
 var nombre = "";//variable que guardaria el nombre
 
-var pozo = 0;
-var palanca = document.getElementById("palanca");
+var pozo = 0;//cantidad de dinero que ingresa el usuario
+var palanca = document.getElementById("palanca");//guardamos la imagen de la palanca
 var slots = document.getElementsByClassName("slot");
 var imagenes = ["Assets/Imagenes/Diamante.png","Assets/Imagenes/Zapallo.png","Assets/Imagenes/Papa.png","Assets/Imagenes/Enano.png","Assets/Imagenes/Doc.png", "Assets/Imagenes/Cherry.png"];//array de las imagenes de los slots
 var intervalo = "";
@@ -23,10 +23,11 @@ var intervalo2 = "";
 
 //accion que ocurre al tocar el boton iniciar
 botonini.onclick = function(){
-oculto.style.display="block";
+oculto.style.display="flex";
 sectionini.style.display="none";
 botonini.style.display="none";
 headprinci.style.display="flex";
+timba.style.display="flex"
 nombre = prompt("ingrese su nombre");
 usuario.innerHTML = (nombre.toUpperCase());
 }

@@ -7,12 +7,17 @@ img{
 header{
 	display: none;
 	justify-content: space-between;
+	border-style: inset;
+	border-width: 1em;
+	border-color: darkred;
+	
 }
 
 
 #oculto{
 	display: none;
-
+	justify-content: center;
+	align-items: center;
 }
 oculto,div{
 	width: 30%;
@@ -45,3 +50,37 @@ oculto,div{
 	flex-direction: row;
 }
 
+#conteruleta{
+	display: flex;
+	flex-direction: row;
+	border-color: darkred;
+	border-width: 1em;
+	border-style: inset;
+	justify-content: space-between;
+}
+
+#conteruleta div{
+	width: 5.5em;
+	height: auto;
+	border-left: darkred;
+	border-width: 1em;
+	border-style: inset;
+}
+
+#palanca{
+width:7em;
+height: auto;
+}
+
+#timba{
+	display: none;
+	margin-top: 1.5em;
+	align-items: center;
+	justify-content: center;
+}
+
+.maquina{
+	border-width: 2em;
+	border-color: #E0B115;
+	border-style: double;
+}
