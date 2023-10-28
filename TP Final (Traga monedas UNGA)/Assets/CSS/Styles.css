@@ -7,14 +7,9 @@ img{
 header{
 	display: none;
 	justify-content: space-between;
-
 }
 
-header div{
-	background: black;
-	color: lightyellow;
-	border-radius: 0.2em;
-}
+
 #oculto{
 	display: none;
 
@@ -42,4 +37,11 @@ oculto,div{
 
 #plata{
 	display:none;
+	margin-right: 0.5em;
 }
+
+#separación{
+	display: flex;
+	flex-direction: row;
+}
+
