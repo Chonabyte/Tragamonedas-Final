@@ -3,6 +3,9 @@ img{
 	width:100%;
 	height: auto;
 }
+li{
+	list-style: none;
+}
 
 header{
 	display: none;
@@ -83,4 +86,25 @@ height: auto;
 	border-width: 2em;
 	border-color: #E0B115;
 	border-style: double;
+}
+ul{
+	border-style: double;
+	border-width: 1em;
+
+}
+
+li{
+background: green;
+padding:0.5em;
+}
+
+#botonapuesta{
+	padding: 0.5em;
+	font-weight: bold;
+	color: lightyellow;
+	background: black;
+	border-radius: 0.2em;
+}
+#valoresapuestas{
+	display: none;
 }

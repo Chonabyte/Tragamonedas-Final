@@ -20,6 +20,9 @@ var imagenes = ["Assets/Imagenes/Diamante.png","Assets/Imagenes/Zapallo.png","As
 var intervalo = "";
 var intervalo2 = "";
 
+//seccion apuesta
+var valores = document.getElementById("valoresapuestas");
+var botonapues = document.getElementById("botonapuesta");
 
 //accion que ocurre al tocar el boton iniciar
 botonini.onclick = function(){
@@ -47,6 +50,16 @@ intervalo = setInterval(function(){
 },700);
 }
 
+
+botonapues.onclick= function(){
+	valores.style.display="flex"
+}
+
+
+
+
+
+
 document.getElementById("frenado").onclick = function(){
 intervalo2 = setTimeout(function(){
 	clearInterval(intervalo);
@@ -56,6 +69,7 @@ intervalo2 = setTimeout(function(){
 function random(){
 return Math.round(Math.random() * (imagenes.length - 1));
 }
+
 
 
 
